@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licitum | Abogados y Notarios en Guatemala</title>
+  <meta name="description" content="Bufete Licitum, Abogados y Notarios en zona 9, Ciudad de Guatemala. Asesoría legal, notariado, derecho corporativo, civil, familia y laboral. Lic. Henry Barreda.">
+  <meta name="theme-color" content="#143a28">
+  <!-- Vista previa al compartir en WhatsApp / Facebook -->
+  <meta property="og:title" content="Licitum | Abogados y Notarios">
+  <meta property="og:description" content="Asesoría legal y notarial en Guatemala. Lic. Henry Barreda.">
+  <meta property="og:image" content="img/og-imagen.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" aria-label="Inicio">
+        <img data-src="general.logo" alt="Logo Licitum" class="brand__logo">
+        <span class="brand__text">
+          <strong data-text="general.nombre"></strong>
+          <small data-text="general.subtitulo"></small>
+        </span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <ul class="nav__list" id="navList"></ul>
+        <a href="#contacto" class="btn btn--gold nav__cta" data-text="botonMenu"></a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== PORTADA ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" id="heroBg"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="eyebrow eyebrow--light" data-text="portada.etiqueta"></p>
+          <h1 class="hero__title" data-html="portada.titulo"></h1>
+          <p class="hero__text" data-text="portada.texto"></p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--gold"><span data-text="portada.botonPrincipal"></span> <span aria-hidden="true">→</span></a>
+            <a href="#servicios" class="btn btn--ghost" data-text="portada.botonSecundario"></a>
+          </div>
+          <div class="hero__contact">
+            <a class="js-tel" href="#"><span class="ico" data-icon="telefono"></span><span data-text="contacto.telefono"></span></a>
+            <a class="js-mail" href="#"><span class="ico" data-icon="correo"></span><span data-text="contacto.email"></span></a>
+          </div>
+        </div>
+        <div class="hero__logo reveal">
+          <img data-src="general.logoGrande" alt="Licitum Abogados y Notarios">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CIFRAS ===== -->
+    <section class="stats">
+      <div class="container stats__grid" id="stats"></div>
+    </section>
+
+    <!-- ===== NOSOTROS ===== -->
+    <section class="section" id="nosotros">
+      <div class="container about">
+        <div class="about__media reveal">
+          <img data-src="nosotros.imagen" alt="Oficinas de Licitum" loading="lazy">
+          <div class="about__badge">
+            <img data-src="general.logo" alt="">
+          </div>
+        </div>
+        <div class="about__body reveal">
+          <p class="eyebrow" data-text="nosotros.etiqueta"></p>
+          <h2 class="title" data-text="nosotros.titulo"></h2>
+          <div id="aboutText"></div>
+          <blockquote class="quote" data-text="nosotros.cita"></blockquote>
+          <ul class="checks" id="aboutChecks"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section class="section section--soft" id="servicios">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-text="servicios.etiqueta"></p>
+          <h2 class="title" data-text="servicios.titulo"></h2>
+          <span class="divider"></span>
+        </header>
+        <div class="services" id="services"></div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESO ===== -->
+    <section class="section section--dark" id="proceso">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--light" data-text="proceso.etiqueta"></p>
+          <h2 class="title title--light" data-text="proceso.titulo"></h2>
+          <span class="divider"></span>
+        </header>
+        <ol class="steps" id="steps"></ol>
+      </div>
+    </section>
+
+    <!-- ===== EQUIPO ===== -->
+    <section class="section" id="equipo">
+      <div class="container team">
+        <div class="team__intro reveal">
+          <p class="eyebrow eyebrow--line" data-text="equipo.etiqueta"></p>
+          <h2 class="title" data-text="equipo.titulo"></h2>
+          <p class="muted" data-text="equipo.texto"></p>
+          <a href="#contacto" class="btn btn--dark">Agendar una cita <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="team__grid" id="team"></div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIOS (se oculta si no hay) ===== -->
+    <section class="section section--soft" id="testimonios" hidden>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-text="testimonios.etiqueta"></p>
+          <h2 class="title" data-text="testimonios.titulo"></h2>
+          <span class="divider"></span>
+        </header>
+        <div class="testimonials" id="testimonialList"></div>
+      </div>
+    </section>
+
+    <!-- ===== PREGUNTAS ===== -->
+    <section class="section" id="preguntas">
+      <div class="container faq-wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-text="preguntas.etiqueta"></p>
+          <h2 class="title" data-text="preguntas.titulo"></h2>
+          <span class="divider"></span>
+        </header>
+        <div class="faq" id="faq"></div>
+      </div>
+    </section>
+
+    <!-- ===== LLAMADO ===== -->
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <div>
+          <h2 data-text="llamado.titulo"></h2>
+          <p data-text="llamado.texto"></p>
+        </div>
+        <a class="btn btn--gold js-wa" href="#" target="_blank" rel="noopener"><span class="ico" data-icon="whatsapp"></span><span data-text="llamado.boton"></span></a>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section" id="contacto">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <p class="eyebrow" data-text="formulario.etiqueta"></p>
+          <h2 class="title" data-text="formulario.titulo"></h2>
+          <p class="muted" data-text="formulario.texto"></p>
+          <ul class="contact__list">
+            <li><span class="ico ico--box" data-icon="usuario"></span><div><small>Abogado y Notario</small><strong data-text="contacto.abogado"></strong></div></li>
+            <li><span class="ico ico--box" data-icon="telefono"></span><div><small>Teléfono / WhatsApp</small><a class="js-tel" href="#" data-text="contacto.telefono"></a></div></li>
+            <li><span class="ico ico--box" data-icon="telefono"></span><div><small>Oficina</small><a class="js-tel2" href="#" data-text="contacto.telefonoOficina"></a></div></li>
+            <li><span class="ico ico--box" data-icon="correo"></span><div><small>Correo</small><a class="js-mail" href="#" data-text="contacto.email"></a></div></li>
+            <li><span class="ico ico--box" data-icon="ubicacion"></span><div><small>Dirección</small><span data-text="contacto.direccion"></span></div></li>
+            <li><span class="ico ico--box" data-icon="reloj"></span><div><small>Horario</small><span data-text="contacto.horario"></span></div></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <label>Nombre completo<input type="text" name="nombre" required autocomplete="name"></label>
+            <label>Teléfono<input type="tel" name="telefono" required autocomplete="tel"></label>
+          </div>
+          <label>Correo electrónico<input type="email" name="correo" autocomplete="email"></label>
+          <label>Asunto<select name="asunto" id="formSubject"></select></label>
+          <label>Mensaje<textarea name="mensaje" rows="5" required placeholder="Cuéntenos brevemente su caso..."></textarea></label>
+          <p class="form__error" id="formError" role="alert"></p>
+          <button type="submit" class="btn btn--dark btn--block"><span class="ico" data-icon="whatsapp"></span><span data-text="formulario.boton"></span></button>
+          <button type="button" class="link-btn" id="formMail" data-text="formulario.botonCorreo"></button>
+        </form>
+      </div>
+      <div class="container">
+        <div class="map reveal"><iframe id="map" title="Ubicación Licitum" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIE ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img data-src="general.logoGrande" alt="Licitum" class="footer__logo">
+        <p data-text="pie.texto"></p>
+        <div class="social" id="social"></div>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul class="footer__links" id="footerNav"></ul>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul class="footer__links" id="footerServices"></ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul class="footer__contact">
+          <li><span class="ico" data-icon="telefono"></span><a class="js-tel" href="#" data-text="contacto.telefono"></a></li>
+          <li><span class="ico" data-icon="telefono"></span><a class="js-tel2" href="#" data-text="contacto.telefonoOficina"></a></li>
+          <li><span class="ico" data-icon="correo"></span><a class="js-mail" href="#" data-text="contacto.email"></a></li>
+          <li><span class="ico" data-icon="ubicacion"></span><span data-text="contacto.direccion"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> <span data-text="pie.derechos"></span></p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-float js-wa" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><span data-icon="whatsapp"></span></a>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
