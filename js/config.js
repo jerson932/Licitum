@@ -136,7 +136,7 @@ window.SITIO = {
     titulo: "Profesionales comprometidos con su caso",
     texto: "Atención personalizada y directa por parte del profesional a cargo, con la seriedad que su asunto requiere.",
     miembros: [
-      { nombre: "Lic. Henry Barreda", cargo: "Abogado y Notario · Director",
+      { nombre: "Lic. Henry Barreda", cargo: "Abogado y Notario",
         foto: "img/henry-barreda.jpg",
         descripcion: "Abogado y Notario colegiado, al frente de Licitum. Asesora a personas y empresas en materia notarial, civil, mercantil y de familia." },
       { nombre: "Lic. Juan Luis Martínez", cargo: "Abogado",
