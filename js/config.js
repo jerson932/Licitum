@@ -17,7 +17,7 @@ window.SITIO = {
     nombre: "Licitum",
     subtitulo: "Abogados y Notarios",
     tituloPestana: "Licitum | Abogados y Notarios en Guatemala",
-    descripcionSEO: "Bufete Licitum, Abogados y Notarios en zona 9, Ciudad de Guatemala. Asesoría legal, notariado, derecho corporativo, civil, familia y laboral. Lic. Henry Barreda.",
+    descripcionSEO: "Bufete Licitum, Abogados y Notarios en zona 9, Ciudad de Guatemala. Asesoría legal, notariado, derecho corporativo, civil, familia y laboral. Lic. Henry Barreda y Lic. Juan Luis Martínez.",
     logo: "img/logo-emblema.png",          // emblema del menú
     logoGrande: "img/logo-completo.png",   // logo con texto (hero y pie)
     colorPrincipal: "#143a28",             // verde
@@ -26,16 +26,15 @@ window.SITIO = {
 
   /* ---------- CONTACTO (se usa en toda la página) ---------- */
   contacto: {
-    abogado: "Lic. Henry Barreda",
-    telefono: "+502 5516 9920",
-    whatsapp: "50255169920",               // solo números, con código de país
-    telefonoOficina: "+502 3357 7288",
+    abogado: "Lic. Henry Barreda · Lic. Juan Luis Martínez",
+    telefono: "+502 3357 7288",            // teléfono de la oficina
+    whatsapp: "50233577288",               // WhatsApp de la oficina: solo números, con código de país
     email: "licitumabogados@gmail.com",
     direccion: "6ta Avenida 9-85, zona 9, Edificio Galerías Tívoli, 3er nivel, Of. 301, interior No. 5, Ciudad de Guatemala",
     horario: "Lunes a viernes: 8:00 a 17:00 · Sábado: con cita previa",
     // Mapa: busque la dirección en Google Maps > Compartir > Insertar mapa > copie solo el enlace src
     mapa: "https://www.google.com/maps?q=Edificio+Galerias+Tivoli+6a+Avenida+9-85+zona+9+Guatemala&output=embed",
-    mensajeWhatsapp: "Hola Lic. Barreda, me gustaría agendar una consulta legal."
+    mensajeWhatsapp: "Hola Licitum, me gustaría agendar una consulta legal."
   },
 
   /* ---------- REDES SOCIALES (deje "" para ocultar) ---------- */
@@ -80,13 +79,13 @@ window.SITIO = {
     etiqueta: "Quiénes somos",
     titulo: "Un bufete que pone su tranquilidad en el centro",
     parrafos: [
-      "Licitum Abogados y Notarios es un bufete guatemalteco dirigido por el Lic. Henry Barreda, Abogado y Notario, comprometido con brindar soluciones jurídicas claras, oportunas y apegadas a la ley.",
+      "Licitum Abogados y Notarios es un bufete guatemalteco dirigido por el Lic. Henry Barreda, Abogado y Notario, junto al Lic. Juan Luis Martínez, comprometido con brindar soluciones jurídicas claras, oportunas y apegadas a la ley.",
       "Creemos que cada caso merece atención directa del profesional, comunicación honesta y una estrategia bien definida. Por eso trabajamos de forma cercana, explicando cada paso en lenguaje sencillo."
     ],
     cita: "La ley es dura, pero es la ley; y tener todo en orden bajo su imperio, es la tranquilidad que todos deseamos.",
     imagen: "img/oficina.jpg",
     puntos: [
-      "Atención directa del abogado",
+      "Atención directa de nuestros abogados",
       "Honorarios claros desde el inicio",
       "Seguimiento constante de su caso",
       "Oficina en zona 9, de fácil acceso"
@@ -139,7 +138,10 @@ window.SITIO = {
     miembros: [
       { nombre: "Lic. Henry Barreda", cargo: "Abogado y Notario · Director",
         foto: "img/henry-barreda.jpg",
-        descripcion: "Abogado y Notario colegiado, al frente de Licitum. Asesora a personas y empresas en materia notarial, civil, mercantil y de familia." }
+        descripcion: "Abogado y Notario colegiado, al frente de Licitum. Asesora a personas y empresas en materia notarial, civil, mercantil y de familia." },
+      { nombre: "Lic. Juan Luis Martínez", cargo: "Abogado",
+        foto: "img/juan-luis-martinez.jpg",
+        descripcion: "Abogado del bufete Licitum. Brinda asesoría y acompañamiento legal a personas y empresas con atención cercana y profesional." }
       // Para agregar otro miembro, copie el bloque { ... } anterior, péguelo aquí y separe con una coma.
     ]
   },

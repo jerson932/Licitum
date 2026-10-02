@@ -39,6 +39,7 @@ Iconos disponibles para servicios: `notaria, empresa, balanza, familia, contrato
 | Archivo | Uso | Tamaño sugerido |
 |---|---|---|
 | `img/henry-barreda.jpg` | **Foto del Lic. Barreda (reemplazar)** | 800×1000 px, vertical |
+| `img/juan-luis-martinez.jpg` | **Foto del Lic. Juan Luis Martínez (reemplazar)** | 800×1000 px, vertical |
 | `img/oficina.jpg` | Sección "Quiénes somos" | 900×1100 px, vertical |
 | `img/fondo-hero.jpg` | Fondo de la portada | 1920×1100 px |
 | `img/logo-emblema.png` | Logo del menú (fondo transparente) | PNG |

@@ -69,7 +69,6 @@
   $("heroBg").style.backgroundImage = "url('" + S.portada.imagenFondo + "')";
 
   all(".js-tel").forEach(function (a) { a.href = tel(C.telefono); });
-  all(".js-tel2").forEach(function (a) { a.href = tel(C.telefonoOficina); });
   all(".js-mail").forEach(function (a) { a.href = "mailto:" + C.email; });
   all(".js-wa").forEach(function (a) { a.href = waLink(); });
   $("map").src = C.mapa;
@@ -97,7 +96,7 @@
   $("services").innerHTML = S.servicios.lista.map(function (s) {
     return '<article class="service reveal"><div class="service__icon">' + icon(s.icono) + "</div>" +
       "<h3>" + esc(s.titulo) + "</h3><p>" + esc(s.texto) + "</p>" +
-      '<a href="' + waLink("Hola Lic. Barreda, quisiera información sobre: " + s.titulo) + '" target="_blank" rel="noopener" class="service__link">Consultar <span aria-hidden="true">→</span></a></article>';
+      '<a href="' + waLink("Hola Licitum, quisiera información sobre: " + s.titulo) + '" target="_blank" rel="noopener" class="service__link">Consultar <span aria-hidden="true">→</span></a></article>';
   }).join("");
   $("footerServices").innerHTML = S.servicios.lista.slice(0, 6).map(function (s) {
     return '<li><a href="#servicios">' + esc(s.titulo) + "</a></li>";
@@ -111,6 +110,7 @@
   /* ---------- Equipo ---------- */
   var team = S.equipo.miembros;
   $("team").classList.toggle("team__grid--single", team.length === 1);
+  $("team").classList.toggle("team__grid--two", team.length === 2);
   $("team").innerHTML = team.map(function (m) {
     return '<article class="member reveal"><div class="member__photo"><img src="' + esc(m.foto) + '" alt="' + esc(m.nombre) + '"></div>' +
       '<div class="member__body"><h3>' + esc(m.nombre) + '</h3><p class="member__role">' + esc(m.cargo) + "</p>" +

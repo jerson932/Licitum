@@ -149,6 +149,7 @@ p { margin: 0 0 1em; }
 .team__intro .btn { margin-top: 10px; }
 .team__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .team__grid--single { grid-template-columns: 1fr; }
+.team__grid--two { grid-template-columns: 1fr 1fr; gap: 28px; }
 .member { background: var(--white); }
 .member__photo { overflow: hidden; border-radius: var(--radius); }
 .member__photo img { width: 100%; aspect-ratio: 4/5; object-fit: cover; transition: transform .6s; }
